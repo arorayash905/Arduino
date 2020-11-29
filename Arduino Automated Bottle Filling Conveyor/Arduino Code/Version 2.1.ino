@@ -1,6 +1,9 @@
 #include <LiquidCrystal.h>
 #include <iostream>
 
+/*Created by Abhishek Tyagi and Yash Arora, Department of Mechatronics on 30 Novembver 2020*/
+
+
 int solenoid1 = 3;
 int solenoid2 = 4;
 int solenoid3 = 5;
