@@ -160,8 +160,56 @@ digitalWrite(solenoid, LOW);  //water off because solenoid put the valve down/cl
   digitalWrite(solenoid4, LOW);
   digitalWrite(solenoid5, HIGH);
   
+  }    
+    
+  if(Solenoid5 > Solenoid4){
+    
+  digitalWrite(IRsensor5, HIGH)
+  digitalWrite(IRsensor1, LOW)
+  digitalWrite(IRsensor3, LOW)
+  digitalWrite(IRsensor4, LOW)
+  digitalWrite(IRsensor2, LOW)
   }
-}
+
+
+  else if(Solenoid4 > Solenoid3){
+
+  digitalWrite(IRsensor4, HIGH)
+  digitalWrite(IRsensor1, LOW)
+  digitalWrite(IRsensor3, LOW)
+  digitalWrite(IRsensor2, LOW)
+  digitalWrite(IRsensor5, LOW)
+  }
+
+
+  else if(Solenoid3 > Solenoid2){
+
+  digitalWrite(IRsensor3, HIGH)
+  digitalWrite(IRsensor1, LOW)
+  digitalWrite(IRsensor2, LOW)
+  digitalWrite(IRsensor4, LOW)
+  digitalWrite(IRsensor5, LOW)
+  }
+
+
+  else if(Solenoid2 > Solenoid1){
+
+  digitalWrite(IRsensor2, HIGH)
+  digitalWrite(IRsensor1, LOW)
+  digitalWrite(IRsensor3, LOW)
+  digitalWrite(IRsensor4, LOW)
+  digitalWrite(IRsensor5, LOW)
+  }
+
+  else {
+
+  digitalWrite(IRsensor1, HIGH)
+  digitalWrite(IRsensor2, LOW)
+  digitalWrite(IRsensor3, LOW)
+  digitalWrite(IRsensor4, LOW)
+  digitalWrite(IRsensor5, LOW)
+  }
+  }
 
  delay(2000);
 
@@ -171,7 +219,4 @@ digitalWrite(solenoid, LOW);  //water off because solenoid put the valve down/cl
   digitalWrite(solenoid4, LOW);
   digitalWrite(solenoid5, LOW);
   
-
-
-
 }
