@@ -106,7 +106,7 @@ void loop(){
  
  int Detect_glass =digitalRead(IRSensor1);
 
-if(Solenoid5 > Solenoid4){
+if(Solenoid_E > Solenoid_D){
 
 digitalWrite(IRsensor5, HIGH)
 
@@ -117,7 +117,7 @@ digitalWrite(IRsensor2, LOW)
 }
 
 
-else if(Solenoid4 > Solenoid3){
+else if(Solenoid_D > Solenoid_C){
 
 digitalWrite(IRsensor4, HIGH)
 
@@ -128,7 +128,7 @@ digitalWrite(IRsensor5, LOW)
 }
 
 
-else if(Solenoid3 > Solenoid2){
+else if(Solenoid_C > Solenoid_B){
 
 digitalWrite(IRsensor3, HIGH)
 
@@ -139,7 +139,7 @@ digitalWrite(IRsensor5, LOW)
 }
 
 
-else if(Solenoid2 > Solenoid1){
+else if(Solenoid_B > Solenoid_A){
 
 digitalWrite(IRsensor2, HIGH)
 
