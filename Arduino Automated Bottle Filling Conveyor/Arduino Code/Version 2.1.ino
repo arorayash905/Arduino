@@ -71,6 +71,14 @@ void setup() {
 
  int sensorStatus;
 
+
+   pinMode (IRSensor1, INPUT); // sensor pin INPUT
+   pinMode (LED, OUTPUT); // Led pin OUTPUT
+}
+
+
+void loop(){
+  
  cout<<"Enter 1 for yes AND 0 for no.";
  
  cout<<"Do you want to run Solenoid A : ";
@@ -88,12 +96,6 @@ void setup() {
  cout<<"Do you want to run Solenoid E : ";
  cin>>solenoid_E;
   
-   pinMode (IRSensor1, INPUT); // sensor pin INPUT
-   pinMode (LED, OUTPUT); // Led pin OUTPUT
-}
-
-
-void loop(){
   
  digitalWrite(trigPin, LOW); // Change delay while debugging
  delayMicroseconds(2); 
@@ -109,7 +111,7 @@ void loop(){
  
  int Detect_glass =digitalRead(IRSensor1);
 
-if(Solenoid5 > Solenoid4){
+if(Solenoid5 == 1){
 
 digitalWrite(IRsensor5, HIGH);
 
@@ -120,7 +122,7 @@ digitalWrite(IRsensor2, LOW);
 }
 
 
-else if(Solenoid4 > Solenoid3){
+else if(Solenoid4 == 1){
 
 digitalWrite(IRsensor4, HIGH);
 
@@ -131,7 +133,7 @@ digitalWrite(IRsensor5, LOW);
 }
 
 
-else if(Solenoid3 > Solenoid2){
+else if(Solenoid3 == 1){
 
 digitalWrite(IRsensor3, HIGH);
 
@@ -142,7 +144,7 @@ digitalWrite(IRsensor5, LOW);
 }
 
 
-else if(Solenoid2 > Solenoid1){
+else if(Solenoid2 == 1){
 
 digitalWrite(IRsensor2, HIGH);
 
@@ -153,7 +155,7 @@ digitalWrite(IRsensor5, LOW);
 }
 
 
-else {
+else if(Solenoid1 == 1){
 
 digitalWrite(IRsensor1, HIGH);
 
